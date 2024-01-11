@@ -1,0 +1,221 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5ccc94;
+    color: #b2c26d;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Modificadores de texto y colores */
+h1,
+h2 {
+    color: #444;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin-left: 1px;
+    margin-bottom: 40px;
+}
+
+/* Box Model y estructura */
+section {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Agregar separación entre h2 y p */
+.texto p {
+    margin-top: 0;
+}
+
+/* Estilo para las imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Estilos CSS para la página quienes_somos.html */
+
+/* Estilo para el contenedor principal */
+.columnas {
+    display: flex;
+}
+
+/* Estilo para la columna de texto */
+.texto {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 5px solid #ccc;
+}
+
+/* Estilo para la columna de imagen y texto debajo */
+.imagen-texto {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.imagen-texto img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;/
+}
+
+.imagen-texto p {
+    margin-top: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos adicionales para la página contacto.html */
+body {
+    background-color: #b2c26d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos adicionales para la página contacto.html */
+
+/* Cambio de tamaño para las cajas de los parámetros de contacto */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Cambio de fuente para el texto de la sección "¡Contáctanos!" */
+section h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ... */
+
+/* Media query para dispositivos móviles con anchos comunes de pantalla */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para dispositivos con ancho de hasta 480px (dispositivos móviles) */
+
+    /* Por ejemplo */
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Media query para dispositivos más grandes con pantallas de tamaño medio */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Media query para dispositivos más grandes con pantallas de tamaño más grande */
+@media only screen and (min-width: 769px) {
+
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Cambiar color del texto del enlace */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Cambiar color del texto al hacer clic hehe */
+footer a:hover {
+    color: #8a2be2;
+}
+
+/* Estilos adicionales para la sección de Google Maps */
+.google-maps {
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    /* Ajusta el ancho según sea necesario */
+    height: 250px;
+    /* Ajusta la altura según sea necesario */
+    border: 2px solid #000;
+    /* Borde para visualización */
+}
