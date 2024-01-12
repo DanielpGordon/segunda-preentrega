@@ -1,8 +1,12 @@
+/* Enlace al CDN de Bootstrap para estilos adicionales */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css');
+
 /* Estilos generales */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #83cd6f;
 }
 
 header {
@@ -103,14 +107,14 @@ section {
 .imagen-texto img {
     width: 100%;
     display: block;
-    margin: 0 auto;/
+    margin: 0 auto;
 }
 
 .imagen-texto p {
     margin-top: 10px;
 }
 
-/* Estilos para el formulario de contacto */
+/* Estilos para el formulario de contacto :p */
 .formulario {
     width: 50%;
     margin: 0 auto;
@@ -153,8 +157,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Estilos adicionales para la página contacto.html */
-
 /* Cambio de tamaño para las cajas de los parámetros de contacto */
 input[type="text"],
 input[type="email"],
@@ -174,9 +176,6 @@ section h2 {
 
 /* Media query para dispositivos móviles con anchos comunes de pantalla */
 @media only screen and (max-width: 480px) {
-    /* Estilos específicos para dispositivos con ancho de hasta 480px (dispositivos móviles) */
-
-    /* Por ejemplo */
     body {
         font-size: 14px;
     }
@@ -208,14 +207,9 @@ footer a:hover {
     color: #8a2be2;
 }
 
-/* Estilos adicionales para la sección de Google Maps */
-.google-maps {
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    /* Ajusta el ancho según sea necesario */
-    height: 250px;
-    /* Ajusta la altura según sea necesario */
-    border: 2px solid #000;
-    /* Borde para visualización */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbccb7 !important;
 }
