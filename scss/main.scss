@@ -1,0 +1,10 @@
+// main.scss
+
+// Importa estilos generales
+@import 'general.scss';
+
+// Importa estilos específicos de cada página
+@import 'index.scss';
+@import 'galeria.scss';
+@import 'quienes_somos.scss';
+@import 'contacto.scss';

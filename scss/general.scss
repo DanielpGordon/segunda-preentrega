@@ -1,0 +1,79 @@
+// Variables
+$primary-color: #90f0f7; // Color primario
+$secondary-color: #2a2b2c; // Color secundario
+$background-color: #9ee489; // Color de fondo
+$text-color: #333333; // Color del texto
+$border-color: #ced4da; // Color del borde
+$border-radius: 4px; // Radio del borde
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 14px; // Tamaño de fuente ajustado
+}
+
+// Botones
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+// Formularios
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color;
+    background-color: #DAF7A6; // Color de fondo ajustado
+    background-clip: padding-box;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        border-color: $primary-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    }
+}

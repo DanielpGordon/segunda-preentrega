@@ -1,215 +1,109 @@
-/* Enlace al CDN de Bootstrap para estilos adicionales */
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css');
-
-/* Estilos generales */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #83cd6f;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #9ee489;
 }
 
-header {
-    background-color: #5ccc94;
-    color: #b2c26d;
-    text-align: center;
-    padding: 20px 0;
+a {
+  color: #90f0f7;
+  text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+a:hover {
+  text-decoration: underline;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Modificadores de texto y colores */
 h1,
-h2 {
-    color: #444;
-    margin: 0;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  color: #90f0f7;
 }
 
-h2 {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin-left: 1px;
-    margin-bottom: 40px;
+p {
+  line-height: 1.5;
+  font-size: 14px;
 }
 
-/* Box Model y estructura */
-section {
-    margin-bottom: 20px;
-    display: flex;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #90f0f7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.texto {
-    flex: 1;
-    padding-right: 20px;
-    width: 50%;
-    box-sizing: border-box;
+.btn:hover {
+  background-color: #60eaf4;
 }
 
-/* Agregar separación entre h2 y p */
-.texto p {
-    margin-top: 0;
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #DAF7A6;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* Estilo para las imágenes */
+.form-control:focus {
+  border-color: #90f0f7;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .galeria img {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 5px;
+  width: 200px;
+  /* Tamaño deseado para las imágenes */
+  margin: 10px;
+  /* Espacio entre las imágenes */
 }
 
-/* Estilos CSS para la página quienes_somos.html */
-
-/* Estilo para el contenedor principal */
-.columnas {
-    display: flex;
+.precio-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
 
-/* Estilo para la columna de texto */
-.texto {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 5px solid #ccc;
-}
-
-/* Estilo para la columna de imagen y texto debajo */
-.imagen-texto {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-}
-
-.imagen-texto img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.imagen-texto p {
-    margin-top: 10px;
-}
-
-/* Estilos para el formulario de contacto :p */
-.formulario {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.campo {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Estilos adicionales para la página contacto.html */
 body {
-    background-color: #b2c26d;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
+  margin-top: auto;
 }
 
-/* Cambio de tamaño para las cajas de los parámetros de contacto */
-input[type="text"],
-input[type="email"],
-input[type="submit"] {
-    width: 80%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.white-text {
+  color: #000000;
+  /* Color blanco */
+  margin-top: 20px;
+  /* Separación desde los botones e imágenes */
 }
 
-/* Cambio de fuente para el texto de la sección "¡Contáctanos!" */
-section h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* ... */
-
-/* Media query para dispositivos móviles con anchos comunes de pantalla */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-/* Media query para dispositivos más grandes con pantallas de tamaño medio */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* Media query para dispositivos más grandes con pantallas de tamaño más grande */
-@media only screen and (min-width: 769px) {
-
-    body {
-        font-size: 18px;
-    }
-}
-
-/* Cambiar color del texto del enlace */
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Cambiar color del texto al hacer clic hehe */
-footer a:hover {
-    color: #8a2be2;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #bbccb7 !important;
+.galeria div {
+  margin-bottom: 20px;
+  /* Separación desde los botones e imágenes */
 }
